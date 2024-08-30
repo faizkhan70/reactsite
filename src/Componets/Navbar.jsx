@@ -1,97 +1,114 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { Transition } from '@headlessui/react';
+import { FaFacebookF } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0A0C1C] border-gray-200">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="#" className="h-8" alt="Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-            logo
-          </span>
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded={isMenuOpen}
-          onClick={toggleMenu}
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5 text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+    <nav className="bg-white shadow-lg p-4 fixed w-full h-15 z-[999]">
+      <div className="container mx-auto flex justify-between items-center ">
+        <div className="text-black text-lg font-bold ml-5 mr-[-50px]">
+          <div className="animated-text">
+            <img src='https://i.ibb.co/47NBDPg/Site.png' className='w-8 relative ' />
+          </div>
+        </div>
+        <div className="hidden md:flex space-x-4 items-center text-sm gap-5 ml-[100px]">
+          <a href="#hero" className="text-black hover:text-gray-400 font-sans">HOME</a>
+          <a href="#meeting" className="text-black hover:text-gray-400">MEETING</a>
+          <div
+            className="relative"
+            onMouseEnter={() => setIsDropdownOpen(true)}
+            onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } w-full md:block md:w-auto`}
-          id="navbar-default"
-        >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#0A0C1C] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#0A0C1C]">
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:p-0 hover:text-blue-500"
-                aria-current="page"
+            <button
+              className="text-black hover:text-gray-400"
+            >
+              <a href='#courses'>COURSES</a>
+            </button>
+          
+          </div>
+          <a href="#apply" className="text-black hover:text-gray-400">APPLY</a>
+          <a href="#contact" className="text-black hover:text-gray-400">CONTACT</a>
+        </div>
+        <div className="hidden md:flex space-x-4 items-center text-sm gap-2 mr-5">
+          <a href="https://www.facebook.com/digiminnion" className="text-black"><FaFacebookF size={18} /></a>
+          <a href="https://www.instagram.com/digiminnionofficial" className="text-black"><FaInstagram  size={23} /></a>
+          <a href="https://x.com/digiminnion" className="text-black"><FaTwitter size={24}/></a>
+          <a href="https://www.linkedin.com/company/digiminnion/" className="text-black"><FaLinkedinIn size={23}/></a>
+        </div>
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-black focus:outline-none"
+          >
+            {isOpen ? (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            ) : (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Meetings
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
-              >
-                Courses
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
-              >
-                Apply
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            )}
+          </button>
         </div>
       </div>
+      <Transition
+        show={isOpen}
+        enter="transition ease-out duration-200"
+        enterFrom="transform opacity-0 scale-95"
+        enterTo="transform opacity-100 scale-100"
+        leave="transition ease-in duration-150"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-95"
+      >
+        <div className="md:hidden mt-12 mb-5">
+          <a href="/" className="block px-4 py-2 text-black hover:bg-gray-200">HOME</a>
+          <a href="#meeting" className="block px-4 py-2 text-black hover:bg-gray-200">MEETING</a>
+          <button
+            // onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            // onMouseEnter={() => setIsDropdownOpen(true)}
+            // onMouseLeave={() => setIsDropdownOpen(false)}
+            className="block px-4 py-2 text-black hover:bg-gray-200 focus:outline-none w-full text-left"
+          >
+           <a href='#courses'>COURSES</a>
+          </button>
+          {/* {isDropdownOpen && ( */}
+       
+          {/* )} */}
+          <a href="#apply" className="block px-4 py-2 text-black hover:bg-gray-200">APPLY</a>
+          <a href="#contact" className="block px-4 py-2 text-black hover:bg-gray-200 mb-5">CONTACT</a>
+        </div>
+        
+      </Transition>
     </nav>
   );
 };

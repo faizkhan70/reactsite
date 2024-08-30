@@ -6,16 +6,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Courses from './Componets/Courses';
 import Apply from './Componets/Apply';
 import Contact from './Componets/Contact';
+import Footer from './Componets/Footer';
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}>
-          <Route path="hero" element={<Hero/>} />
-          <Route path="meetings" element={<Meetings/>} />
-          <Route path="courses" element={<Courses/>} />
-          <Route path="apply" element={<Apply/>} />
-          <Route path="contact" element={<Contact/>} />
+          <Route path="/hero" element={<Hero/>} />
+          <Route path="/meetings" element={<Meetings/>} />
+          <Route path="/courses" element={<Courses/>} />
+          <Route path="/apply" element={<Apply/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/footer" element={<Footer/>} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -5,6 +5,7 @@ import Meetings from './Meetings';
 import Courses from './Courses';
 import Apply from './Apply';
 import Contact from './Contact';
+import Footer from './Footer';
 const Home = () => {
   return (
  <>
@@ -14,6 +15,7 @@ const Home = () => {
   <Courses/>
   <Apply/>
   <Contact/>
+  <Footer/>
   </>
   )
 }
