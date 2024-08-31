@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-black text-lg font-bold ml-5 mr-[-50px]">
           <div className="animated-text">
-            <img src='./src/assets/education.png' className='w-12 relative' />
+            <img src='https://i.ibb.co/vvCkVLF/education.png' className='w-12 relative' />
           </div>
         </div>
         <div className="hidden md:flex space-x-4 items-center text-sm gap-5 ml-[100px]">
