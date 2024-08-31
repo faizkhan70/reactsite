@@ -20,7 +20,7 @@ const Hero = () => {
             </svg>
         </div>
     </div>
-    <div className="relative z-20 mx-auto max-w-8xl px-8 lg:px-8 mt-28 dm:mt-60">
+    <div className="relative z-20 mx-auto max-w-8xl px-8 lg:px-8 mt-28 dm:mt-60 ms:mt-32">
         <div className="mx-auto max-w-5xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-700 sm:text-5xl ">
             HELLO STUDENTS
