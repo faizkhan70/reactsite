@@ -8,4 +8,4 @@ const Whychoose = () => {
   )
 }
 
-export default Whychoose;
+export default Whychoose
