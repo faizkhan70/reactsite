@@ -7,9 +7,11 @@ import Courses from './Componets/Courses';
 import Apply from './Componets/Apply';
 import Contact from './Componets/Contact';
 import Footer from './Componets/Footer';
+import Navbar from './Componets/Navbar';
 const App = () => {
   return (
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}>
           <Route path="/hero" element={<Hero/>} />
@@ -17,9 +19,9 @@ const App = () => {
           <Route path="/courses" element={<Courses/>} />
           <Route path="/apply" element={<Apply/>} />
           <Route path="/contact" element={<Contact/>} />
-          <Route path="/footer" element={<Footer/>} />
         </Route>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
