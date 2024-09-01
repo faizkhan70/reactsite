@@ -27,12 +27,13 @@ const Navbar = () => {
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
             <button className="text-black  relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
-              <a href='#courses'>COURSES</a>
+              <a href='/courses'>COURSES</a>
             </button>
           </div>
-          <a href="#apply" className="text-black  relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">APPLY</a>
-          <a href="#contact" className="text-black  relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">CONTACT</a>
+          <a href="/contact" className="text-black  relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">CONTACT</a>
         </div>
+
+        <a href="/contact" className=" relative after:absolute after:left-0 after:-bottom-1 after:w-full border px-8 py-2 border-black rounded-full hover:bg-white hover:text-black bg-black text-white after:h-0.5 mr-[-20rem] ml-[-10rem] ">APPLY</a>
         <div className="hidden md:flex space-x-4 items-center text-sm gap-2 mr-5">
           <a href="https://www.facebook.com/digiminnion" className="text-black"><FaFacebookF size={18} /></a>
           <a href="https://www.instagram.com/digiminnionofficial" className="text-black"><FaInstagram size={23} /></a>
@@ -92,10 +93,9 @@ const Navbar = () => {
           <a href="/about" className="block px-4 py-2 text-black hover:bg-gray-200">ABOUT</a>
           <a href="#meeting" className="block px-4 py-2 text-black hover:bg-gray-200">MEETING</a>
           <button className="block px-4 py-2 text-black hover:bg-gray-200 focus:outline-none w-full text-left">
-            <a href='#courses'>COURSES</a>
+            <a href='/courses'>COURSES</a>
           </button>
-          <a href="#apply" className="block px-4 py-2 text-black hover:bg-gray-200">APPLY</a>
-          <a href="#contact" className="block px-4 py-2 text-black hover:bg-gray-200 mb-5">CONTACT</a>
+          <a href="/contact" className="block px-4 py-2 text-black hover:bg-gray-200 mb-5">CONTACT</a>
         </div>
       </Transition>
     </nav>
