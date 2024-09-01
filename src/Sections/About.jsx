@@ -1,6 +1,8 @@
 import React from "react";
 
 const About = () => {
+
+
   return (
     <div className="overflow-hidden">
    <section className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
