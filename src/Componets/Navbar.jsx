@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4 items-center text-sm gap-5 ml-[100px]">
           <a href="/" className="text-black  font-sans relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">HOME</a>
           <a href="/about" className="text-black  font-sans relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">ABOUT</a>
-          <a href="#meeting" className="text-black  relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">MEETING</a>
+          <a href="/blog" className="text-black  relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">BLOGS</a>
           <div
             className="relative"
             onMouseEnter={() => setIsDropdownOpen(true)}
@@ -91,7 +91,7 @@ const Navbar = () => {
         <div className="md:hidden mt-12 mb-5">
           <a href="/" className="block px-4 py-2 text-black hover:bg-gray-200">HOME</a>
           <a href="/about" className="block px-4 py-2 text-black hover:bg-gray-200">ABOUT</a>
-          <a href="#meeting" className="block px-4 py-2 text-black hover:bg-gray-200">MEETING</a>
+          <a href="/blog" className="block px-4 py-2 text-black hover:bg-gray-200">BLOGS</a>
           <button className="block px-4 py-2 text-black hover:bg-gray-200 focus:outline-none w-full text-left">
             <a href='/courses'>COURSES</a>
           </button>

@@ -6,6 +6,10 @@ import Navbar from './Componets/Navbar';
 import About from './Sections/About';
 import Contact from './Sections/Contact';
 import Courses from './Sections/Courses';
+import Blog from './Sections/Blog';
+import Blogpage from './Sections/Blogpage';
+import Blogpage1 from './Sections/Blogpage1';
+import Blogpage2 from './Sections/Blogpage2';
 
 const App = () => {
   return (
@@ -17,6 +21,11 @@ const App = () => {
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogpage" element={<Blogpage />} />
+          <Route path="/blogpage1" element={<Blogpage1 />} />
+          <Route path="/blogpage2" element={<Blogpage2 />} />
+
       </Routes>
       <Footer/>
     </BrowserRouter>
