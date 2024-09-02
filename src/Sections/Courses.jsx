@@ -86,9 +86,9 @@ const Courses = () => {
 
   return (
     <section
-      className="max-w-screen-full  h-[52rem] mx-auto p-5 sm:p-10 md:p-16 bg-[#f9fafbd6] grid-flow-col-dense mb-[35rem] ms:mt-[20rem] dm:mt-[12rem] ms:mb-[152rem] dm:mb-[148rem]"
+      className="max-w-screen-full  h-[52rem] dm:h-[20rem] mx-auto p-5 sm:p-10 md:p-16 bg-[#f9fafbd6] grid-flow-col-dense mb-[35rem] ms:mt-[0rem] dm:mt-[rem] ms:mb-[190rem] dm:mb-[190rem]"
     >
-      <div className="my-20"> 
+      <div className="my-20 ms:my-[7rem]"> 
       <h2 className="text-3xl  md:text-6xl font-bold text-center text-gray-700 mb-14">
         All the skills you need in one place
       </h2>
