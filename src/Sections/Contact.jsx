@@ -8,7 +8,7 @@ const Contact = () => {
   <div className="flex flex-col md:flex-row justify-center items-center p-8 md:p-16 bg-white ">
         {/* Form Section */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0 md:mr-8 ml-[10rem] mt-20 dm:ml-0">
-          <h2 className="text-4xl font-bold mb-2 font-sanss">
+          <h2 className="text-4xl font-bold mb-4 font-sanss">
             Contact Us
           </h2>
 

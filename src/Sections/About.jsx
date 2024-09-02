@@ -13,7 +13,7 @@ const About = () => {
         <div className="rounded-xl  w-[40rem] dm:w-[25rem] dm:mt-10 ">
           <img
             className="w-[140rem] h-auto"
-            src="./src/assets/about.png"
+            src="https://i.ibb.co/dbfFwnJ/about.png"
             alt="Company Vision"
           />
         </div>
@@ -90,7 +90,7 @@ concept of education and learning.
                     <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
                     
                     </div>
-                    <p className="font-heading ml-16 text-3xl dm:text-2xl leading-6 font-bold text-gray-700">WHY DISTANCE DUNIYA</p>
+                    <p className="font-heading ml-16 text-3xl dm:text-2xl leading-6 font-bold text-gray-700">DIZTOVERSITY</p>
                   </div>
                   <div className="mt-2 ml-16 -mr-36 dm:w-[21rem] text-base text-gray-500">
                   Distance Duniya, one can enroll in any skill-oriented course without having to worry about the admission year. Plus, the courses are accessible worldwide 24/7, meaning if you are in a  9-5 corporate job, you can still learn and update yourself.
