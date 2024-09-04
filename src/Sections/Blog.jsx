@@ -24,8 +24,6 @@ const Blog = () => {
           link: "/blogpage2"
         },
         // Add more blog posts as needed
-     
-     
       ];
       
   return (
