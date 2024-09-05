@@ -28,7 +28,7 @@ const About = () => {
         </div>
         {/* <div className="absolute top-0 left-0 w-11/12 sm:w-4/6 bg-gray-500 px-6 sm:px-12 py-8 sm:py-14 flex flex-col justify-center rounded-xl group-hover:bg-sky-600 transition-all">
           <span className=" mb-6 sm:mb-10 font-bold text-3xl sm:text-4xl text-white text-center">
-            About Us
+            ABOUT US
           </span>
           <h2 className="text-white font- text-sm -mt-5 sm:text-3xl text-center">
             Our Company History, Mission, Team, Vision.
@@ -51,7 +51,7 @@ const About = () => {
           and no class started. I was waiting, hoping to get a teacher, but unfortunately, they never
           provided one. They did return the money after my constant pressure.
         </p>
-        <h3 className="mb-4 font-semibold text-xl text-gray-700">
+        <h3 className="mb-4 font-semibold text-2xl text-gray-700">
           Our Team:
         </h3>
         <ul
@@ -70,7 +70,7 @@ const About = () => {
    
 <section className="bg-gray-100 text-white-100 text-center py-16 z-10 loverflow-hidden will-change-transform relative">
         <div className="container mx-auto px-4 -mb-20" data-aos="fade-up">
-          <h1 className="text-4xl font-bold mb-6 dm:text-3xl">
+          <h1 className="text-5xl font-bold mb-6 dm:text-3xl">
           We provide you with expert teachers  <br className="hidden md:block" /> who believe in the Harkness method of
           learning.
           </h1>
@@ -99,7 +99,7 @@ concept of education and learning.
                     <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
                     
                     </div>
-                    <p className="font-heading ml-16 text-3xl dm:text-2xl leading-6 font-bold text-gray-700">DIZTOVERSITY</p>
+                    <p className="font-heading ml-16 text-3xl dm:text-2xl leading-6 font-bold text-gray-700">Diztoversity</p>
                   </div>
                   <div className="mt-2 ml-16 -mr-36 dm:w-[21rem] text-base text-gray-500">
                   Distance Duniya, one can enroll in any skill-oriented course without having to worry about the admission year. Plus, the courses are accessible worldwide 24/7, meaning if you are in a  9-5 corporate job, you can still learn and update yourself.
@@ -112,7 +112,7 @@ concept of education and learning.
                     <div className="absolute flex  items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
                     
                     </div>
-                    <p className="font-heading ml-16  dm:text-2xl text-3xl leading-6 font-bold text-gray-700">HERE WE ARE</p>
+                    <p className="font-heading ml-16  dm:text-2xl text-3xl leading-6 font-bold text-gray-700">Here we are</p>
                   </div>
                   <div className="mt-2 ml-16 -mr-36 dm:w-[21rem] text-base text-gray-500">
                   Distance Duniya makes sure that its students get the best package, learning, and placement. We care for you like your parents do when it comes to education and learning.
