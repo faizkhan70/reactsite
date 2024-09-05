@@ -22,7 +22,7 @@ const About = () => {
         <div className="rounded-xl  w-[40rem] dm:w-[25rem] dm:mt-10 ">
           <img
             className="w-[140rem] h-auto"
-            src="https://i.ibb.co/dbfFwnJ/about.png"
+            src="https://img.freepik.com/free-photo/teens-with-drinks-laptop_23-2147659112.jpg?t=st=1725561133~exp=1725564733~hmac=5963fdcd39b07bc4ce1ab09cae35d30256f50ec2ff9fbe6e8a5021a399263376&w=996"
             alt="Company Vision"
           />
         </div>

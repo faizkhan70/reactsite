@@ -11,7 +11,7 @@ const ProgramCard = ({ image, badgeText, title, duration, link }) => {
             {badgeText}
           </span>
         </div>
-        <div className="p-4 bg-blue-900 h-[9rem] text-white flex flex-col justify-between">
+        <div className="p-4 bg-blue-300 h-[9rem] text-black flex flex-col justify-between">
           <h2 className="text-lg font-semibold mb-2">{title}</h2>
           <div className="flex items-center text-sm">
             <svg
