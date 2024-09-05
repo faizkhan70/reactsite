@@ -1,50 +1,156 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from "react";
+import "./HeroStyle.css";
 
 const Hero = () => {
+  const sliderRef = useRef(null);
+  const intervalRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0); // State to track the current index
+
+  const moveSlider = (direction) => {
+    const sliderList = sliderRef.current.querySelector(".list");
+    const thumbnail = sliderRef.current.querySelector(".thumbnail");
+    const sliderItems = sliderList.querySelectorAll(".item");
+    const thumbnailItems = thumbnail.querySelectorAll(".item");
+
+    if (direction === "next") {
+      sliderList.appendChild(sliderItems[0]);
+      thumbnail.appendChild(thumbnailItems[0]);
+      sliderRef.current.classList.add("next");
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderItems.length); // Update index on 'next'
+    } else {
+      sliderList.prepend(sliderItems[sliderItems.length - 1]);
+      thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1]);
+      sliderRef.current.classList.add("prev");
+      setCurrentIndex(
+        (prevIndex) => (prevIndex - 1 + sliderItems.length) % sliderItems.length
+      ); // Update index on 'prev'
+    }
+
+    sliderRef.current.addEventListener(
+      "animationend",
+      () => {
+        if (direction === "next") {
+          sliderRef.current.classList.remove("next");
+        } else {
+          sliderRef.current.classList.remove("prev");
+        }
+      },
+      { once: true }
+    );
+  };
+
+  // Autoscroll every 7 seconds
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      moveSlider("next");
+    }, 10000);
+
+    return () => {
+      clearInterval(intervalRef.current);
+    };
+  }, []);
+
+  const images = [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIIzguHdKxWfgwCEQHt7eVmNYCkX4Cahqb9g&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhdo5CGeY7fSaXxLQrcxONIpQnn9zyxs9eAw&s",
+    "https://dpu.edu.in/img/compression/medical-clg.jpg",
+    "https://i.ytimg.com/vi/U40sGneJwRQ/maxresdefault.jpg",
+    "https://images.shiksha.com/mediadata/images/1573113703phpv24G2q.jpeg",
+  ];
+
+  const contentData = [
+    {
+      title: "AMITY UNIVERSITY",
+      type: "ONLINE",
+      description:
+        "Amity university is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
+    {
+      title: "MANIPAL UNIVERSITY",
+      type: "ONLINE",
+      description:
+        "Manipal university is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
+    {
+      title: "DPU-DY PATIL PUNE",
+      type: "ONLINE",
+      description:
+        "DPU-DY patil is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
+    {
+      title: "LP UNIVERSITY",
+      type: "ONLINE",
+      description:
+        "Lovely professional university  is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
+    {
+      title: "VG UNIVERSITY",
+      type: "ONLINE",
+      description:
+        "Vivekananda global university is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
+  ];
+
   return (
-    <>
-      <section
-        id="hero"
-        className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 pt-20 sm:pb-16 sm:pt-32 lg:pb-24 xl:pb-32 xl:pt-40 h-screen"
-      >
-        <div className="relative z-10 mt-16 dm:w-[50rem]">
-          <div className="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-start overflow-hidden">
-            {/* Image with Overlay for Opacity Effect */}
+    <div className="slider h-screen mt-0 overflow-hidden" ref={sliderRef}>
+      <div className="list">
+        {images.map((img, index) => (
+          <div className="item" key={index}>
+            <img src={img} alt="" className="w-full h-full   object-cover" />
+            {index === currentIndex && ( // Show content only for the current index
+              <div className="overlay absolute top-[0%] pt-[10rem] dm:pl-[1rem] w-[100%] inset-0  drop-shadow-lg left-1/2 pl-[12rem] transform  bg-black opacity-60 -translate-x-1/2 pr-[30%] box-border text-white text-shadow-lg">
+                <div className="title text-[5em] font-sanss dm:text-[4em] ms:text-[4em] font-bold">
+                  {contentData[currentIndex].title}
+                </div>
+                <div className="type text-[5em] font-sanss dm:text-[4em] ms:text-[4em] font-bold text-[#14ff72cb]">
+                  {contentData[currentIndex].type}
+                </div>
+                <div className="description font-sans w-[60%] dm:w-full">
+                  {contentData[currentIndex].description}
+                </div>
+                <div className="button grid grid-cols-2 gap-5 mt-5">
+                  <button className="border-none font-sans bg-white text-black font-medium transition-all hover:letter-spacing-[3px]">
+                    {contentData[currentIndex].buttonLabel}
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <div className="thumbnail absolute bottom-[50px] left-[80rem] flex gap-5 transform -translate-x-1/2 z-10">
+        {images.map((img, index) => (
+          <div className="item" key={index}>
             <img
-              src="src/assets/Copy of Banner (1).png"
+              src={img}
               alt=""
-              className="h-screen w-full mt-96 object-cover"
+              className="w-[150px] h-[220px] object-cover rounded-[20px] shadow-lg"
             />
-            <div className="absolute inset-0 bg- bg-opacity-60"></div> {/* Overlay */}
           </div>
-        </div>
-        <div className="relative z-20 max-w-full px-8 lg:px-8 mt-28 dm:mt-60 ms:mt-32">
-          <div className="text-left">
-            {/* Increased text shadow intensity */}
-            <h1
-              className="text-4xl font-bold tracking-tight text-black sm:text-4xl"
-              style={{ textShadow: "4px 4px 10px rgba(107, 114, 128, 0.9)" }}
-            >
-              HELLO STUDENTS
-            </h1>
-            <h1
-              className="text-4xl font-bold tracking-tight text-black sm:text-5xl mt-3"
-              style={{ textShadow: "4px 4px 10px rgba(107, 114, 128, 0.9)" }}
-            >
-              WELCOME TO EDUCATION MEETING
-            </h1>
-            <div className="mt-10 flex items-start justify-start gap-x-4 dm:flex-col">
-              <button className="text-lg md:text-xl bg-transparent border rounded-xl border-black text-black py-2 px-4 hover:bg-blue-600 hover:text-white shadow-lg shadow-gray-500">
-                Upcoming Meetings
-              </button>
-              <button className="text-lg md:text-xl dm:mt-4 bg-transparent border rounded-xl border-black text-black py-2 px-4 hover:bg-blue-600 hover:text-white shadow-lg shadow-gray-500">
-                Get In Touch
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+
+      <div className="nextPrevArrows absolute top-[80%] right-1/2 transform translate-x-1/2 flex gap-2">
+        <button
+          className="prev w-10 h-10 rounded-full bg-[#14ff72cb] text-white font-bold transition hover:bg-white hover:text-black"
+          onClick={() => moveSlider("prev")}
+        >
+          {"<"}
+        </button>
+        <button
+          className="next w-10 h-10 rounded-full bg-[#14ff72cb] text-white font-bold transition hover:bg-white hover:text-black"
+          onClick={() => moveSlider("next")}
+        >
+          {">"}
+        </button>
+      </div>
+    </div>
   );
 };
 

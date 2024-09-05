@@ -5,7 +5,16 @@ const About = () => {
 
   return (
     <div className="overflow-hidden">
-   <section className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+   <section className="relative flex min-h-screen  flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+   <div className="container mx-auto px-4 pt-28 -mb-28" data-aos="fade-up">
+          <h1 className="text-5xl font-black text-center mb-6 dm:text-3xl">
+          ABOUT US
+          </h1>
+          <p className="text-xl mb-10 text-center max-w-7xl mx-auto leading-relaxed">
+          Our Company History, Mission, Team, Vision.
+          </p>
+        
+        </div>
   <div className="w-full mx-auto max-w-screen-lg mt-28 px-4 sm:px-6 lg:px-8">
     <div className="group grid w-full grid-cols-1 md:grid-cols-2 gap-8">
       <div className="relative flex items-end -ml-40 dm:ml-5  flex-col pl-4 md:pl-16 before:block before:absolute before:h-1/6 before:w-2 before:bg-blue-500 before:bottom-0 before:left-0 before:rounded-lg before:transition-all group-hover:before:bg-orange-300 overflow-hidden">
@@ -17,14 +26,14 @@ const About = () => {
             alt="Company Vision"
           />
         </div>
-        <div className="absolute top-0 left-0 w-11/12 sm:w-4/6 bg-gray-500 px-6 sm:px-12 py-8 sm:py-14 flex flex-col justify-center rounded-xl group-hover:bg-sky-600 transition-all">
+        {/* <div className="absolute top-0 left-0 w-11/12 sm:w-4/6 bg-gray-500 px-6 sm:px-12 py-8 sm:py-14 flex flex-col justify-center rounded-xl group-hover:bg-sky-600 transition-all">
           <span className=" mb-6 sm:mb-10 font-bold text-3xl sm:text-4xl text-white text-center">
             About Us
           </span>
           <h2 className="text-white font- text-sm -mt-5 sm:text-3xl text-center">
             Our Company History, Mission, Team, Vision.
           </h2>
-        </div>
+        </div> */}
       </div>
       <div className="pl-4 md:pl-12">
         <p className="mb-6 -mr-40 dm:mr-0 text-gray-700">

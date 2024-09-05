@@ -16,14 +16,14 @@ const CourseCard = ({ image, title, description, duration }) => (
           </svg>
           <button
             type="button"
-            className="px-10 py-3 font-semibold rounded-full bg-transparent border-2 text-black hover:bg-blue-500 hover:text-white"
+            className="px-10 py-3 font-sans font-semibold rounded-full bg-transparent border-2 text-black hover:bg-blue-500 hover:text-white"
           >
             Enroll Now
           </button>
         </p>
         <a
           href="#"
-          className="text-black font-bold text-lg mb-2 mt-5 hover:text-indigo-600 inline-block"
+          className="text-black font-sanss font-bold text-lg mb-2 mt-5 hover:text-indigo-600 inline-block"
         >
           {title}
         </a>
@@ -89,7 +89,7 @@ const Courses = () => {
       id="courses"
       className="max-w-screen-full h-screen mx-auto p-5 sm:p-10 md:p-16 bg-[#f9fafbd6] grid-flow-col-dense mb-[35rem] ms:mt-[20rem] dm:mt-[12rem] ms:mb-[152rem] dm:mb-[148rem]"
     >
-      <h2 className="text-3xl md:text-6xl font-bold text-center text-gray-700 mb-14">
+      <h2 className="text-3xl font-sanss md:text-6xl font-bold text-center text-gray-700 mb-14">
         All the skills you need in one place
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">

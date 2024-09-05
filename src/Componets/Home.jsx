@@ -7,13 +7,13 @@ import Contact from './Contact';
 
 const Home = () => {
   return (
- <>
+ <div className='overflow-hidden'>
   <Hero/>
   <Meetings/>
   <Courses/>
   <Apply/>
   <Contact/>
-  </>
+  </div>
   )
 }
 

@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ["Roboto"],
+        'sanss': ["Montserrat"]
+      },
 
       screens:{
         xxl: { max: "1535px" },

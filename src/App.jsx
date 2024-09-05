@@ -6,6 +6,8 @@ import Navbar from './Componets/Navbar';
 import About from './Sections/About';
 import Contact from './Sections/Contact';
 import Courses from './Sections/Courses';
+import PgCourses from './Sections/PgCourses';
+import UgCourses from './Sections/UgCourses';
 
 const App = () => {
   return (
@@ -17,6 +19,9 @@ const App = () => {
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/pgcourses" element={<PgCourses />} />
+          <Route path="/ugcourses" element={<UgCourses />} />
+
       </Routes>
       <Footer/>
     </BrowserRouter>
