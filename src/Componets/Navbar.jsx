@@ -27,8 +27,22 @@ const Navbar = () => {
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
             <button className="text-black  relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">
-              <a href='/courses'>COURSES</a>
+              <a href='#'>COURSES</a>
             </button>
+            <Transition
+              show={isDropdownOpen}
+              enter="transition ease-out duration-200"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-150"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95"
+            >
+              <div className="absolute bg-white-100 left-1/2 transform -translate-x-1/2  w-[280px] mt-6 p-4 bg-white rounded-md shadow-lg z-20">
+                <a href="/ugcourses" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">UG COURSES</a>
+                <a href="/pgcourses" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">PG COURSES</a>
+              </div>
+            </Transition>
           </div>
           <a href="/contact" className="text-black  relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-blue-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100">CONTACT</a>
         </div>
@@ -93,8 +107,12 @@ const Navbar = () => {
           <a href="/about" className="block px-4 py-2 text-black hover:bg-gray-200">ABOUT</a>
           <a href="/blog" className="block px-4 py-2 text-black hover:bg-gray-200">BLOGS</a>
           <button className="block px-4 py-2 text-black hover:bg-gray-200 focus:outline-none w-full text-left">
-            <a href='/courses'>COURSES</a>
+            <a href='#'>COURSES</a>
           </button>
+          <div className="bg-white-100 ml-5">
+                <a href="/ugcourses" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">UG COURSES</a>
+                <a href="/pgcourses" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">PG COURSES</a>
+            </div>
           <a href="/contact" className="block px-4 py-2 text-black hover:bg-gray-200 mb-5">CONTACT</a>
         </div>
       </Transition>

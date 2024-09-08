@@ -16,14 +16,14 @@ const CourseCard = ({ image, title, description, duration }) => (
           </svg>
           <button
             type="button"
-            className="px-10 py-3 font-semibold rounded-full bg-transparent border-2 text-black hover:bg-blue-500 hover:text-white"
+            className="px-10 py-3 font-sans font-semibold rounded-full bg-transparent border-2 text-black hover:bg-blue-500 hover:text-white"
           >
             Enroll Now
           </button>
         </p>
         <a
           href="#"
-          className="text-black font-bold text-lg mb-2 mt-5 hover:text-indigo-600 inline-block"
+          className="text-black font-sanss font-bold text-lg mb-2 mt-5 hover:text-indigo-600 inline-block"
         >
           {title}
         </a>
@@ -43,43 +43,43 @@ const Courses = () => {
     {
       image:
         "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      title: "Front End Developer",
-      description: "Craft beautiful and interactive web experiences.",
+      title: "Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE)",
+      // description: "Craft beautiful and interactive web experiences.",
       duration: "3 Months",
     },
     {
       image:
         "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      title: "Backend Developer",
-      description: "Master the art of server-side programming and databases.",
+      title: "Bachelor of Technology (B.Tech) in Information Technology (IT)",
+      // description: "Master the art of server-side programming and databases.",
       duration: "4 Months",
     },
     {
       image:
         "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      title: "Full Stack Development",
-      description: "Become a versatile developer with front-to-backend skills.",
+      title: "Bachelor of Computer Applications (BCA)",
+      // description: "Become a versatile developer with front-to-backend skills.",
       duration: "6 Months",
     },
     {
       image:
         "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      title: "Data Analytics",
-      description: "Turn data into actionable insights and drive decisions.",
+      title: "Master of Science (M.Sc) in Information Technology",
+      // description: "Turn data into actionable insights and drive decisions.",
       duration: "6 Months",
     },
     {
       image:
         "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      title: "Artificial Intelligence",
-      description: "Dive into the future with AI and machine learning.",
+      title: "M.Tech in Software Engineering",
+      // description: "Dive into the future with AI and machine learning.",
       duration: "8 Months",
     },
     {
       image:
         "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      title: "Data Science",
-      description: "Unlock the power of data to solve real-world problems.",
+      title: "M.Tech in Artificial Intelligence and Machine Learning",
+      // description: "Unlock the power of data to solve real-world problems.",
       duration: "8 Months",
     },
   ];
@@ -89,8 +89,8 @@ const Courses = () => {
       id="courses"
       className="max-w-screen-full h-screen mx-auto p-5 sm:p-10 md:p-16 bg-[#f9fafbd6] grid-flow-col-dense mb-[35rem] ms:mt-[20rem] dm:mt-[12rem] ms:mb-[152rem] dm:mb-[148rem]"
     >
-      <h2 className="text-3xl md:text-6xl font-bold text-center text-gray-700 mb-14">
-        All the skills you need in one place
+      <h2 className="text-3xl font-sanss md:text-6xl font-bold text-center text-gray-700 mb-14">
+       ALL COURSES
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
         {coursesData.map((course, index) => (
