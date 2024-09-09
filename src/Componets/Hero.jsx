@@ -103,11 +103,11 @@ const Hero = () => {
           <div className="item" key={index}>
             <img src={img} alt="" className="w-full h-full   object-cover" />
             {index === currentIndex && ( // Show content only for the current index
-              <div className="overlay absolute top-[0%] pt-[10rem] dm:pl-[1rem] w-[100%] inset-0  drop-shadow-lg left-1/2 pl-[12rem] transform  bg-black opacity-60 -translate-x-1/2 pr-[30%] box-border text-white text-shadow-lg">
-                <div className="title text-[5em] font-sanss dm:text-[4em] ms:text-[4em] font-bold">
+              <div className="overlay absolute top-[0%] pt-[10rem] dm:pl-[1rem] ms:pl-[1rem] w-[100%] inset-0  drop-shadow-lg left-1/2 pl-[12rem] transform  bg-black opacity-60 -translate-x-1/2 pr-[30%] box-border text-white text-shadow-lg">
+                <div className="title text-[5em] font-sanss dm:text-[4em] ms:text-[3em] font-bold">
                   {contentData[currentIndex].title}
                 </div>
-                <div className="type text-[5em] font-sanss dm:text-[4em] ms:text-[4em] font-bold text-[#14ff72cb]">
+                <div className="type text-[5em] font-sanss dm:text-[4em] ms:text-[3em] font-bold text-[#14ff72cb]">
                   {contentData[currentIndex].type}
                 </div>
                 <div className="description font-sans w-[60%] dm:w-full">

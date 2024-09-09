@@ -4,34 +4,34 @@ import Transition from "../Transition";
 
 const ProgramCard = ({ image, badgeText, title, duration, link }) => {
   return (
-    <Link to={link}>
-      <div className="bg-white rounded-lg overflow-hidden hover:shadow-slate-800 shadow-lg max-w-xs w-full sm:w-72">
-        <div className="relative">
-          <img src={image} alt={title} className="w-full h-48 object-cover" />
-          <span className="absolute top-2 left-2 bg-yellow-400 text-blue-900 text-xs font-bold px-2 py-1 rounded">
-            {badgeText}
-          </span>
-        </div>
-        <div className="p-4 bg-blue-300 h-[9rem] text-black flex flex-col justify-between">
-          <h2 className="text-lg font-semibold mb-2">{title}</h2>
-          <div className="flex items-center text-sm">
-            <svg
-              className="w-5 h-5 mr-1"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4 4a1 1 0 011-1h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V4zm14 0v14H6V4h12zm-7 9a1 1 0 102 0 1 1 0 00-2 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-            {duration} YEAR
-          </div>
+    <Link to={link} className="w-full sm:w-72">
+    <div className="bg-white rounded-lg overflow-hidden hover:shadow-slate-800 shadow-lg">
+      <div className="relative">
+        <img src={image} alt={title} className="w-full h-48 object-cover" />
+        <span className="absolute top-2 left-2 bg-yellow-400 text-blue-900 text-xs font-bold px-2 py-1 rounded">
+          {badgeText}
+        </span>
+      </div>
+      <div className="p-4 bg-blue-300 h-[9rem] text-black flex flex-col justify-between">
+        <h2 className="text-lg font-semibold mb-2">{title}</h2>
+        <div className="flex items-center text-sm">
+          <svg
+            className="w-5 h-5 mr-1"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              d="M4 4a1 1 0 011-1h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V4zm14 0v14H6V4h12zm-7 9a1 1 0 102 0 1 1 0 00-2 0z"
+              clipRule="evenodd"
+            />
+          </svg>
+          {duration} YEAR
         </div>
       </div>
-    </Link>
+    </div>
+  </Link>
   );
 };
 
@@ -122,16 +122,14 @@ const Programs = () => {
 
   return (
     <>
-      <div className="bg-black h-[400px]">
-        <h1 className=" font-bold pt-40 text-center dm:pt-48 dm:mb-3 dm:text-5xl  text-8xl text-white">
-          POSTGRADUTE COURSES
+      <div className="bg-black h-[400px] flex items-center justify-center">
+        <h1 className="font-bold text-center text-white text-3xl md:text-5xl lg:text-8xl">
+        POSTGRADUTE COURSES
         </h1>
       </div>
-      <div className="mt-0 py-32">
-        {" "}
+      <div className="py-16 px-4">
         <Transition />
-        {/* Add margin top here */}
-        <div className="flex flex-wrap gap-6 mt-0 justify-center">
+        <div className="flex flex-wrap gap-6 justify-center">
           {programs.map((program, index) => (
             <ProgramCard key={index} {...program} />
           ))}
