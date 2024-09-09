@@ -30,10 +30,10 @@ const Footer = () => {
 				<h3 className="tracking-wide uppercase text-xl font-bold font-sanss text-gray-900">Company</h3>
 				<ul className="space-y-1">
 					<li>
-						<a rel="noopener noreferrer" href="#">Privacy</a>
+						<a rel="noopener noreferrer" href="/privacy">Privacy</a>
 					</li>
 					<li>
-						<a rel="noopener noreferrer" href="#">Terms of Service</a>
+						<a rel="noopener noreferrer" href="/trem">Terms & Condition</a>
 					</li>
 				</ul>
 			</div>
