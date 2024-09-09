@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Transition from "../Transition";
 
 const ProgramCard = ({ image, badgeText, title, duration, link }) => {
   return (
@@ -120,18 +121,23 @@ const Programs = () => {
   ];
 
   return (
-    <div className="mt-0 py-32">
-      {" "}
-      {/* Add margin top here */}
-      <h2 className="text-3xl md:text-6xl font-bold text-center text-gray-700 mb-14">
-        POSTGRADUTE COURSES
-      </h2>
-      <div className="flex flex-wrap gap-6 mt-0 justify-center">
-        {programs.map((program, index) => (
-          <ProgramCard key={index} {...program} />
-        ))}
+    <>
+      <div className="bg-black h-[400px]">
+        <h1 className=" font-bold pt-40 text-center dm:pt-48 dm:mb-3 dm:text-5xl  text-8xl text-white">
+          POSTGRADUTE COURSES
+        </h1>
       </div>
-    </div>
+      <div className="mt-0 py-32">
+        {" "}
+        <Transition />
+        {/* Add margin top here */}
+        <div className="flex flex-wrap gap-6 mt-0 justify-center">
+          {programs.map((program, index) => (
+            <ProgramCard key={index} {...program} />
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

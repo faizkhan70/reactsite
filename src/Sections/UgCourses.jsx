@@ -1,5 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import Transition from "../Transition";
 
 const ProgramCard = ({ image, badgeText, title, duration, link }) => {
   return (
@@ -37,74 +38,88 @@ const ProgramCard = ({ image, badgeText, title, duration, link }) => {
 const Programs = () => {
   const programs = [
     {
-      image: 'https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75', // Replace with actual image paths
-      badgeText: 'UG PROGRAM',
-      title: 'Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE)',
-      duration: '03',
+      image:
+        "https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75", // Replace with actual image paths
+      badgeText: "UG PROGRAM",
+      title:
+        "Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE)",
+      duration: "03",
       link: "/contact",
     },
     {
-      image: 'https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75',
-      badgeText: ' UG PROGRAM',
-      title: 'Bachelor of Technology (B.Tech) in Information Technology (IT)',
-      duration: '03',
+      image:
+        "https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75",
+      badgeText: " UG PROGRAM",
+      title: "Bachelor of Technology (B.Tech) in Information Technology (IT)",
+      duration: "03",
       link: "/contact",
     },
     {
-      image: 'https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75',
-      badgeText: 'UG PROGRAM',
-      title: 'Bachelor of Computer Applications (BCA)',
-      duration: '03',
+      image:
+        "https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75",
+      badgeText: "UG PROGRAM",
+      title: "Bachelor of Computer Applications (BCA)",
+      duration: "03",
       link: "/contact",
     },
     {
-      image: 'https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75',
-      badgeText: 'UG PROGRAM',
-      title: 'Bachelor of Science (B.Sc) in Information Technology',
-      duration: '03',
+      image:
+        "https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75",
+      badgeText: "UG PROGRAM",
+      title: "Bachelor of Science (B.Sc) in Information Technology",
+      duration: "03",
       link: "/contact",
     },
     {
-      image: 'https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75',
-      badgeText: 'UG PROGRAM',
-      title: 'B.Tech in Software Engineering',
-      duration: '03',
+      image:
+        "https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75",
+      badgeText: "UG PROGRAM",
+      title: "B.Tech in Software Engineering",
+      duration: "03",
       link: "/contact",
     },
     {
-      image: 'https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75',
-      badgeText: 'UG PROGRAM',
-      title: 'B.Tech in Artificial Intelligence and Machine Learning',
-      duration: '03',
+      image:
+        "https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75",
+      badgeText: "UG PROGRAM",
+      title: "B.Tech in Artificial Intelligence and Machine Learning",
+      duration: "03",
       link: "/contact",
     },
     {
-      image: 'https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75',
-      badgeText: 'UG PROGRAM',
-      title: 'B.Tech in Data Science',
-      duration: '03',
+      image:
+        "https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75",
+      badgeText: "UG PROGRAM",
+      title: "B.Tech in Data Science",
+      duration: "03",
       link: "/contact",
     },
     {
-      image: 'https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75',
-      badgeText: 'UG PROGRAM',
-      title: 'B.Tech in Cyber Security',
-      duration: '03',
+      image:
+        "https://amityonline.com/_next/image?url=https%3A%2F%2Famityonline.com%2F_s%2FFrame_1000001991_e9e9335b8e_c74eeb0643.webp&w=384&q=75",
+      badgeText: "UG PROGRAM",
+      title: "B.Tech in Cyber Security",
+      duration: "03",
       link: "/contact",
     },
   ];
 
   return (
-    <div className="mt-0 py-32"> {/* Add margin top here */}
-    <h2 className="text-3xl md:text-6xl font-bold text-center text-gray-700 mb-14">
-        UNDERGRADUTE COURSES
-      </h2>
-      <div className="flex flex-wrap gap-6 mt-0 justify-center">
-        {programs.map((program, index) => (
-          <ProgramCard key={index} {...program} />
-        ))}
+    <>
+      <div className="bg-black h-[400px]">
+        <h1 className=" font-bold pt-40 text-center dm:pt-48 dm:mb-3 dm:text-5xl  text-8xl text-white">
+          UNDERGRADUTE COURSES
+        </h1>
       </div>
-    </div>
+      <div className="mt-0 py-32">
+        <Transition /> {/* Add margin top here */}
+        <div className="flex flex-wrap gap-6 mt-0 justify-center">
+          {programs.map((program, index) => (
+            <ProgramCard key={index} {...program} />
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

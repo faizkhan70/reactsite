@@ -1,16 +1,28 @@
-import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { RxEnvelopeClosed } from "react-icons/rx";
+import Transition from "../Transition";
 
 const Contact = () => {
   return (
-  <div className="flex flex-col md:flex-row justify-center items-center p-8 md:p-16 bg-white ">
+    <>
+      <div className="bg-black h-[400px]">
+        <h1 className=" font-bold pt-40 text-center dm:pt-48 dm:mb-3 dm:text-5xl  text-8xl text-white">
+          CONTACT
+        </h1>
+      </div>
+      <div className="flex flex-col md:flex-row justify-center items-center p-8 md:p-16 bg-white ">
+        <Transition />
         {/* Form Section */}
+
         <div className="w-full md:w-1/2 mb-8 md:mb-0 md:mr-8 ml-[10rem] mt-20 dm:ml-0">
-          <h2 className="text-4xl font-bold mb-4 font-sanss">
-            Contact Us
-          </h2>
+          <h2 className="text-4xl font-bold mb-4 font-sanss">Contact Us</h2>
 
           <form className="space-y-4">
             <div className="relative z-0 w-full mb-5 group">
@@ -53,7 +65,6 @@ const Contact = () => {
                 className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-[#333333] dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
-
               />
               <label
                 htmlFor="floating_email"
@@ -107,40 +118,47 @@ const Contact = () => {
               </div>
             </div>
             <p className="mt-2 text-[#333333] font-sans">Mail us</p>
-            <a  href="mailto:xyz@gmail.com" >
-              <p className="text-lg font-medium font-sans">
-                xyz@gmail.com
-              </p>
+            <a href="mailto:xyz@gmail.com">
+              <p className="text-lg font-medium font-sans">xyz@gmail.com</p>
             </a>
-            <a  href="mailto:info@digiminnion.com" >
-            <p className="text-lg font-medium font-sans">
-            
-            </p>
+            <a href="mailto:info@digiminnion.com">
+              <p className="text-lg font-medium font-sans"></p>
             </a>
-            
           </div>
 
           <div>
             <p className="mt-2 text-[#333333] font-sans">Follow us on</p>
             <div className="flex justify-center md:justify-start space-x-4 mt-3">
-              <a href="https://www.facebook.com/digiminnion" className="text-[#333333] hover:text-black">
+              <a
+                href="https://www.facebook.com/digiminnion"
+                className="text-[#333333] hover:text-black"
+              >
                 <FaFacebookF size={18} />
               </a>
-              <a href="https://www.instagram.com/digiminnionofficial" className="text-[#333333] hover:text-black">
+              <a
+                href="https://www.instagram.com/digiminnionofficial"
+                className="text-[#333333] hover:text-black"
+              >
                 <FaInstagram size={23} />
               </a>
-              <a href="https://x.com/digiminnion" className="text-[#333333] hover:text-black">
+              <a
+                href="https://x.com/digiminnion"
+                className="text-[#333333] hover:text-black"
+              >
                 <FaTwitter size={24} />
               </a>
-              <a href="https://www.linkedin.com/company/digiminnion/" className="text-[#333333] hover:text-black">
+              <a
+                href="https://www.linkedin.com/company/digiminnion/"
+                className="text-[#333333] hover:text-black"
+              >
                 <FaLinkedinIn size={23} />
               </a>
             </div>
           </div>
         </div>
       </div>
-  
-  )
-}
+    </>
+  );
+};
 
-export default Contact
+export default Contact;
