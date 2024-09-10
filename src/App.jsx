@@ -14,6 +14,7 @@ import Blogpage1 from './Sections/Blogpage1';
 import Blogpage2 from './Sections/Blogpage2';
 import Trem from './Sections/Trem';
 import Privacy from './Sections/Privacy';
+import University from './Sections/University';
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/blogpage" element={<Blogpage />} />
           <Route path="/blogpage1" element={<Blogpage1 />} />
           <Route path="/blogpage2" element={<Blogpage2 />} />
+          <Route path="/unversity" element={<University />} />
 
           <Route path="/trem" element={< Trem/>} />
           <Route path="/privacy" element={< Privacy/>} />
