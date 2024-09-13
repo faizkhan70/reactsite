@@ -52,7 +52,7 @@ const Navbar = () => {
         <a href="/contact" className=" relative after:absolute after:left-0 after:-bottom-1 after:w-full border px-8 py-2 border-black rounded-full hover:bg-white hover:text-black bg-black text-white after:h-0.5 mr-[-20rem] ml-[-10rem] ">APPLY</a>
         <div className="hidden md:flex space-x-4 items-center text-sm gap-2 mr-5">
           <a href="#" className="text-black"><FaFacebookF size={18} /></a>
-          <a href="#" className="text-black"><FaInstagram size={23} /></a>
+          <a href="https://www.instagram.com/diztoversity?igsh=MTB5amx5NjhwdXc0bQ==" className="text-black"><FaInstagram size={23} /></a>
           <a href="#" className="text-black"><FaTwitter size={24} /></a>
           <a href="#" className="text-black"><FaLinkedinIn size={23} /></a>
         </div>

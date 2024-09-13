@@ -57,6 +57,11 @@ const Hero = () => {
     "https://dpu.edu.in/img/compression/medical-clg.jpg",
     "https://i.ytimg.com/vi/U40sGneJwRQ/maxresdefault.jpg",
     "https://images.shiksha.com/mediadata/images/1573113703phpv24G2q.jpeg",
+    "https://i.ytimg.com/vi/ZrDKa7_WnhE/maxresdefault.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmiC-22EeJ_Eq1FplBvw5XJB0LDvPBYLPNA&s",
+    "https://upload.wikimedia.org/wikipedia/commons/4/43/Jain-University-Bangalore.jpg",
+    "https://images.shiksha.com/mediadata/images/1535019884phpjug2fa.jpeg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1X-Dqq7_EZ7uEo-dnZ4FZjPFgeek8FX4Vw&s",
   ];
 
   const contentData = [
@@ -95,6 +100,41 @@ const Hero = () => {
         "Vivekananda global university is a private research university in India with multiple campuses and programs.",
       buttonLabel: "APPLY NOW",
     },
+    {
+      title: "SIKKIM MANIPAL UNIVERSITY",
+      type: "ONLINE",
+      description:
+        "Sikkim manipal university is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
+    {
+      title: "SHOOLINI UNIVERSITY",
+      type: "ONLINE",
+      description:
+        "Shoolini university is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
+    {
+      title: "JAIN UNIVERSITY",
+      type: "ONLINE",
+      description:
+        "Jain university is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
+    {
+      title: "LM UNIVERSITY",
+      type: "ONLINE",
+      description:
+        "Ludwig Maximilian university is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
+    {
+      title: "UTTARANCHAL UNIVERSITY",
+      type: "ONLINE",
+      description:
+        "Uttaranchal university is a private research university in India with multiple campuses and programs.",
+      buttonLabel: "APPLY NOW",
+    },
   ];
 
   return (
@@ -111,7 +151,7 @@ const Hero = () => {
                 <div className="type text-[5em] font-sanss dm:text-[3em] ms:text-[3em] font-bold text-[#14ff72cb]">
                   {contentData[currentIndex].type}
                 </div>
-                <div className="description font-sans w-[60%] dm:w-full">
+                <div className="description font-sans w-[40%] dm:w-full">
                   {contentData[currentIndex].description}
                 </div>
                 <div className="button grid grid-cols-2 gap-5 mt-5">
@@ -128,7 +168,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="thumbnail absolute bottom-[50px] left-[80rem] flex gap-5 transform -translate-x-1/2 z-10">
+      <div className="thumbnail absolute bottom-[50px] left-[88rem] flex gap-5 transform -translate-x-1/2 z-10">
         {images.map((img, index) => (
           <div className="item" key={index}>
             <img

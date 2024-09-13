@@ -20,6 +20,11 @@ import Universitypage2 from './Sections/Universitypage2';
 import Universitypage3 from './Sections/Universitypage3';
 import Universitypage4 from './Sections/Universitypage4';
 import Universitypage5 from './Sections/Universitypage5';
+import Universitypage6 from './Sections/Universitypage6';
+import Universitypage7 from './Sections/Universitypage7';
+import Universitypage8 from './Sections/Universitypage8';
+import Universitypage9 from './Sections/Universitypage9';
+import Universitypage10 from './Sections/Universitypage10';
 
 const App = () => {
   return (
@@ -45,6 +50,11 @@ const App = () => {
           <Route path="/unversitypage3" element={< Universitypage3/>} />
           <Route path="/unversitypage4" element={< Universitypage4/>} />
           <Route path="/unversitypage5" element={< Universitypage5/>} />
+          <Route path="/unversitypage6" element={< Universitypage6/>} />
+          <Route path="/unversitypage7" element={< Universitypage7/>} />
+          <Route path="/unversitypage8" element={< Universitypage8/>} />
+          <Route path="/unversitypage9" element={< Universitypage9/>} />
+          <Route path="/unversitypage10" element={< Universitypage10/>} />
           <Route path="/trem" element={< Trem/>} />
           <Route path="/privacy" element={< Privacy/>} />
 

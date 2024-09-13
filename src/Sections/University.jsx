@@ -26,15 +26,48 @@ const University = () => {
     {
       id: 4,
       imageUrl: "https://i.ytimg.com/vi/U40sGneJwRQ/maxresdefault.jpg",
-      title: "LP",
+      title: "LOVELY PROFESSINAL UNIVERSITY",
       link: "/unversitypage4",
     },
     {
       id: 5,
       imageUrl:
         "https://images.shiksha.com/mediadata/images/1573113703phpv24G2q.jpeg",
-      title: "VGU",
+      title: "VIVEKANAND GLOBAL UNIVERSITY",
       link: "/unversitypage5",
+    },
+    {
+      id: 6,
+      imageUrl:
+        "https://i.ytimg.com/vi/ZrDKa7_WnhE/maxresdefault.jpg",
+      title: "SIKKIM MANIPAL UNIVERSITY",
+      link: "/unversitypage6",
+    },
+    {
+      id: 7,
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmiC-22EeJ_Eq1FplBvw5XJB0LDvPBYLPNA&s",
+      title: "SHOOLINI UNIVERSITY",
+      link: "/unversitypage7",
+    },
+    {
+      id: 8,
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/43/Jain-University-Bangalore.jpg",
+      title: "JAIN UNIVERSITY",
+      link: "/unversitypage8",
+    },
+    {
+      id: 9,
+      imageUrl: "https://images.shiksha.com/mediadata/images/1535019884phpjug2fa.jpeg",
+      title: "LUDING MAXIMILIAN UNIVERSITY",
+      link: "/unversitypage9",
+    },
+    {
+      id: 10,
+      imageUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1X-Dqq7_EZ7uEo-dnZ4FZjPFgeek8FX4Vw&s",
+      title: "UTTARANCHAL UNIVERSITY",
+      link: "/unversitypage10",
     },
   ];
 
