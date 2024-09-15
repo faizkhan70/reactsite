@@ -26,47 +26,47 @@ const University = () => {
     {
       id: 4,
       imageUrl: "https://i.ytimg.com/vi/U40sGneJwRQ/maxresdefault.jpg",
-      title: "LOVELY PROFESSINAL UNIVERSITY",
+      title: "LOVELY PROFESSINAL ",
       link: "/unversitypage4",
     },
     {
       id: 5,
       imageUrl:
         "https://images.shiksha.com/mediadata/images/1573113703phpv24G2q.jpeg",
-      title: "VIVEKANAND GLOBAL UNIVERSITY",
+      title: "VIVEKANAND GLOBAL ",
       link: "/unversitypage5",
     },
     {
       id: 6,
       imageUrl:
         "https://i.ytimg.com/vi/ZrDKa7_WnhE/maxresdefault.jpg",
-      title: "SIKKIM MANIPAL UNIVERSITY",
+      title: "SIKKIM MANIPAL ",
       link: "/unversitypage6",
     },
     {
       id: 7,
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmiC-22EeJ_Eq1FplBvw5XJB0LDvPBYLPNA&s",
-      title: "SHOOLINI UNIVERSITY",
+      title: "SHOOLINI ",
       link: "/unversitypage7",
     },
     {
       id: 8,
       imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/43/Jain-University-Bangalore.jpg",
-      title: "JAIN UNIVERSITY",
+      title: "JAIN ",
       link: "/unversitypage8",
     },
     {
       id: 9,
       imageUrl: "https://images.shiksha.com/mediadata/images/1535019884phpjug2fa.jpeg",
-      title: "LUDING MAXIMILIAN UNIVERSITY",
+      title: "LUNDON METROPOLITAN ",
       link: "/unversitypage9",
     },
     {
       id: 10,
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1X-Dqq7_EZ7uEo-dnZ4FZjPFgeek8FX4Vw&s",
-      title: "UTTARANCHAL UNIVERSITY",
+      title: "UTTARANCHAL ",
       link: "/unversitypage10",
     },
   ];
@@ -75,7 +75,7 @@ const University = () => {
     <div className="pb-20">
       <Transition />
       <div className="bg-black h-[300px] md:h-[400px]">
-        <h1 className="font-bold pt-28 md:pt-40 text-center text-5xl md:text-8xl text-white">
+        <h1 className="font-bold pt-40 dm:pt-44  text-center text-5xl md:text-8xl text-white">
           UNIVERSITY
         </h1>
       </div>

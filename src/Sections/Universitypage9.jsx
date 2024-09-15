@@ -9,7 +9,7 @@ const Universitypage9 = () => {
         {/* Main Content */}
         <div className="bg-black h-[300px] md:h-[400px] flex items-center justify-center">
           <h1 className="font-bold text-center text-4xl md:text-8xl text-white">
-          LUDING MAXIMILIAN UNIVERSITY
+            LUNDON METROPOLITAN UNIVERSITY
           </h1>
         </div>
         <main className="container mx-auto pt-16 md:pt-28 bg-white px-4">
@@ -22,26 +22,21 @@ const Universitypage9 = () => {
                 className="w-full h-48 md:h-64 object-cover rounded"
               />
               <h2 className="text-2xl md:text-4xl font-bold mt-4 mb-2">
-                Shoolini University
+                London Metropolitan University
               </h2>
               <p className="text-gray-700 mb-4">
-                Shoolini University, established in 2009, is a private research
-                university located in Solan, Himachal Pradesh, India1. It is
-                known for its strong emphasis on research and innovation, with a
-                significant number of patents filed1. The university offers a
-                wide range of undergraduate, postgraduate, and doctoral programs
-                across various fields such as management, biotechnology,
-                engineering, sciences, media, communications, liberal arts,
-                legal sciences, and design12. Shoolini University is accredited
-                by the University Grants Commission (UGC) and has received a B++
-                grade from NAAC2. It has also been recognized in various
-                national and international rankings, including being ranked
-                among the top private universities in India12. The university is
-                known for its modern infrastructure, strong industry
-                partnerships, and a focus on providing a clean and safe campus
-                environment1. It also offers numerous opportunities for students
-                to engage in real-world research and placements with top
-                companies1.{" "}
+                London Metropolitan University, often referred to as London Met,
+                is a public research university located in London, England. It
+                was formed in 2002 through the merger of the University of North
+                London and London Guildhall University1. The university has
+                campuses in Holloway and Aldgate, offering a wide range of
+                undergraduate and postgraduate courses2. London Met is known for
+                its commitment to social justice and sustainability. It has been
+                recognized for significant reductions in carbon emissions and is
+                dedicated to providing high-quality education and student
+                support2. The university also boasts advanced facilities,
+                including a state-of-the-art Science Centre with one of Europe’s
+                most advanced science teaching labs.{" "}
               </p>
             </div>
             {/* Apply Button */}
