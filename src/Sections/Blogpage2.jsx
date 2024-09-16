@@ -12,7 +12,7 @@ const Blogpage2 = () => {
       <main className="container mx-auto  pt-28 bg-white">
         <div className="flex flex-wrap justify-between">
           {/* Blog Post */}
-          <div className="w-full md:w-8/12 px-4 mb-8 ">
+          <div className="w-full md:w-8/12 px-8 dm:px-8 mb-8 ">
             <img
               src="https://images.unsplash.com/photo-1666112835156-c65bb806ac73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNXx8cXVhbnR1bSUyMGNvbXB1dGluZ3xlbnwwfDB8fHwxNzEyNzUzMTk2fDA&ixlib=rb-4.0.3&q=80&w=1080"
               alt="Featured Image"

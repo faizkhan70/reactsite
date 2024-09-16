@@ -15,7 +15,7 @@ const Universitypage2 = () => {
             {/* Blog Post */}
             <div className="w-full mx-40 dm:mx-0 px-4 mb-8">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhdo5CGeY7fSaXxLQrcxONIpQnn9zyxs9eAw&s"
+                src="https://websiteupload.s3.ap-south-1.amazonaws.com/2024/05/manipal-uni.jpg"
 
                 alt="Featured Image"
                 className="w-full h-48 md:h-64 object-cover rounded"

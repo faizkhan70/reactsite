@@ -12,9 +12,9 @@ const About = () => {
             Our Company History, Mission, Team, Vision.
           </p>
         </div>
-        <div className="w-full mx-auto max-w-screen-lg mt-28 px-4 sm:px-6 lg:px-8">
+        <div className="w-full mx-auto dm:-mt-0 max-w-screen-lg mt-28 px-4 sm:px-6 lg:px-8">
           <div className="group grid w-full grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="relative flex items-end -ml-40 dm:ml-5  flex-col pl-4 md:pl-16 before:block before:absolute before:h-1/6 before:w-2 before:bg-blue-500 before:bottom-0 before:left-0 before:rounded-lg before:transition-all group-hover:before:bg-orange-300 overflow-hidden">
+            <div className="relative flex items-end -ml-40 dm:mx-3  flex-col pl-4 md:pl-16 before:block before:absolute before:h-1/6 before:w-2 before:bg-blue-500 before:bottom-0 before:left-0 before:rounded-lg before:transition-all group-hover:before:bg-orange-300 overflow-hidden">
               <div className="rounded-xl  w-[40rem] dm:w-[25rem] dm:mt-10 ">
                 <img
                   className="w-[140rem] h-auto"
@@ -22,14 +22,6 @@ const About = () => {
                   alt="Company Vision"
                 />
               </div>
-              {/* <div className="absolute top-0 left-0 w-11/12 sm:w-4/6 bg-gray-500 px-6 sm:px-12 py-8 sm:py-14 flex flex-col justify-center rounded-xl group-hover:bg-sky-600 transition-all">
-          <span className=" mb-6 sm:mb-10 font-bold text-3xl sm:text-4xl text-white text-center">
-            ABOUT US
-          </span>
-          <h2 className="text-white font- text-sm -mt-5 sm:text-3xl text-center">
-            Our Company History, Mission, Team, Vision.
-          </h2>
-        </div> */}
             </div>
             <div className="pl-4 md:pl-12">
               <p className="mb-6 -mr-40 dm:mr-0 text-gray-700">
@@ -53,17 +45,6 @@ const About = () => {
                 provided one. They did return the money after my constant
                 pressure.
               </p>
-              <h3 className="mb-4 font-semibold text-2xl text-gray-700">
-                Our Team:
-              </h3>
-              <ul
-                role="list"
-                className="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500"
-              >
-                <li>Mohammad Rizwan, CEO and Co-founder of Distance Duniya</li>
-                <li>Saad, Co-founder of Distance Duniya</li>
-                <li>Jyoti K., Content Manager</li>
-              </ul>
             </div>
           </div>
         </div>

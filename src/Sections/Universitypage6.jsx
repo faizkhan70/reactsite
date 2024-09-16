@@ -17,7 +17,7 @@ const Universitypage6 = () => {
             {/* Blog Post */}
             <div className="w-full mx-40 dm:mx-0 px-4 mb-8">
               <img
-                src="https://i.ytimg.com/vi/ZrDKa7_WnhE/maxresdefault.jpg"
+                src="https://smu.edu.in/content/dam/manipal/smu/images/background-images/aa.jpg"
                 alt="Featured Image"
                 className="w-full h-48 md:h-64 object-cover rounded"
               />

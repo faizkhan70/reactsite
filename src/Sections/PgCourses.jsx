@@ -155,7 +155,7 @@ const ProgramCard = ({ image, badgeText, title, duration, semesterFee, totalFee,
             {badgeText}
           </span>
         </div>
-        <div className="p-4 bg-blue-300 h-[17rem] text-black flex flex-col justify-between">
+        <div className="p-4 bg-white h-[17rem] text-black flex flex-col justify-between">
           <h2 className="text-lg font-semibold mb-2">{title}</h2>
           <div className="flex items-center text-sm mb-2">
             <svg
@@ -186,7 +186,7 @@ const ProgramCard = ({ image, badgeText, title, duration, semesterFee, totalFee,
           {/* Apply Now Button */}
           <Link
             to={link}
-            className="mt-4 bg-yellow-400 text-center text-blue-900 font-bold py-2 px-4 rounded"
+            className="mt-4 bg-[#1e313f] text-center text-white font-bold py-2 px-4 rounded"
           >
             Apply Now
           </Link>
@@ -327,7 +327,7 @@ const Programs = () => {
         POSTGRADUTE COURSES
         </h1>
       </div>
-      <div className="py-16 px-4">
+      <div className="py-16 bg-gray-100 px-4">
         <Transition />
         <div className="flex flex-wrap gap-6 justify-center">
           {programs.map((program, index) => (

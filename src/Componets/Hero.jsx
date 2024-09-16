@@ -52,16 +52,16 @@ const Hero = () => {
   }, []);
 
   const images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIIzguHdKxWfgwCEQHt7eVmNYCkX4Cahqb9g&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhdo5CGeY7fSaXxLQrcxONIpQnn9zyxs9eAw&s",
-    "https://dpu.edu.in/img/compression/medical-clg.jpg",
-    "https://i.ytimg.com/vi/U40sGneJwRQ/maxresdefault.jpg",
-    "https://images.shiksha.com/mediadata/images/1573113703phpv24G2q.jpeg",
-    "https://i.ytimg.com/vi/ZrDKa7_WnhE/maxresdefault.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmiC-22EeJ_Eq1FplBvw5XJB0LDvPBYLPNA&s",
-    "https://upload.wikimedia.org/wikipedia/commons/4/43/Jain-University-Bangalore.jpg",
-    "https://images.shiksha.com/mediadata/images/1535019884phpjug2fa.jpeg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1X-Dqq7_EZ7uEo-dnZ4FZjPFgeek8FX4Vw&s",
+    "https://amity.edu/Aips/ppshh/images/banner3.jpg",
+    "https://websiteupload.s3.ap-south-1.amazonaws.com/2024/05/manipal-uni.jpg",
+    "https://engg.dypvp.edu.in/amiiuac2020/images/institute-of-engineering-and-technology.jpg",
+    "https://hitlerrr.wordpress.com/wp-content/uploads/2018/04/lpu_b.jpg",
+    "https://vit.ac.in/sites/all/themes/vittheme/images/about_banner.jpg",
+    "https://smu.edu.in/content/dam/manipal/smu/images/background-images/aa.jpg",
+    "https://shooliniuniversity.com/media/1687521331-Shoolini%20THE%20Asia%20Rankings%202023.png",
+    "https://www.jainuniversity.ac.in/crfm/assets/img/banner2.png",
+    "https://images.collegedunia.com/public/college_data/images/campusimage/1418297770we_affrim_banner.jpg?mode=stretch",
+    "https://siuk-europe.s3.eu-west-2.amazonaws.com/static/original_images/banner_university_desktop_london_metropolitan_1_hmEyPsQ.webp",
   ];
 
   const contentData = [

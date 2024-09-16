@@ -17,7 +17,7 @@ const Universitypage10 = () => {
             {/* Blog Post */}
             <div className="w-full mx-40 dm:mx-0 px-4 mb-8">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1X-Dqq7_EZ7uEo-dnZ4FZjPFgeek8FX4Vw&s"
+                src="https://siuk-europe.s3.eu-west-2.amazonaws.com/static/original_images/banner_university_desktop_london_metropolitan_1_hmEyPsQ.webp"
                 alt="Featured Image"
                 className="w-full h-48 md:h-64 object-cover rounded"
               />

@@ -15,7 +15,7 @@ const Universitypage3 = () => {
             {/* Blog Post */}
             <div className="w-full mx-40 dm:mx-0 px-4 mb-8">
               <img
-                src="https://dpu.edu.in/img/compression/medical-clg.jpg"
+                src="https://engg.dypvp.edu.in/amiiuac2020/images/institute-of-engineering-and-technology.jpg"
                 alt="Featured Image"
                 className="w-full h-48 md:h-64 object-cover rounded"
               />

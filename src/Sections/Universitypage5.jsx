@@ -15,7 +15,7 @@ const Universitypage5 = () => {
             {/* Blog Post */}
             <div className="w-full mx-40 dm:mx-0 px-4 mb-8">
               <img
-                src="https://images.shiksha.com/mediadata/images/1573113703phpv24G2q.jpeg"
+                src="https://vit.ac.in/sites/all/themes/vittheme/images/about_banner.jpg"
                 alt="Featured Image"
                 className="w-full h-48 md:h-64 object-cover rounded"
               />

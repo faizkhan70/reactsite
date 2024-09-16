@@ -10,15 +10,15 @@ const Blogpage = () => {
           <h1 className=" font-bold pt-40 text-center dm:pt-48 dm:mb-3 dm:text-5xl  text-8xl text-white">BLOG</h1>
         </div>
       <main className="container mx-auto  pt-28 bg-white">
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap  justify-between">
           {/* Blog Post */}
-          <div className="w-full md:w-8/12 px-4 mb-8 ">
+          <div className="w-full md:w-8/12 px-8 dm:px-8 mb-8 ">
             <img
               src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxhaXxlbnwwfDB8fHwxNzEyNzUzMTQ4fDA&ixlib=rb-4.0.3&q=80&w=1080"
               alt="Featured Image"
               className="w-full h-64 object-cover rounded"
             />
-            <h2 className="text-4xl font-bold mt-4 mb-2">
+            <h2 className="text-4xl font-bold mt-4  mb-2">
               What course should I opt for after graduation in 2024?
             </h2>
             <p className="text-gray-700 mb-4">

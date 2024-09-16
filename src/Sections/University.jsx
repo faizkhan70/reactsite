@@ -6,66 +6,66 @@ const University = () => {
     {
       id: 1,
       imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIIzguHdKxWfgwCEQHt7eVmNYCkX4Cahqb9g&s",
+        "https://amity.edu/Aips/ppshh/images/banner3.jpg",
       title: "AMITY",
       link: "/unversitypage",
     },
     {
       id: 2,
       imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhdo5CGeY7fSaXxLQrcxONIpQnn9zyxs9eAw&s",
+        "https://websiteupload.s3.ap-south-1.amazonaws.com/2024/05/manipal-uni.jpg",
       title: "MANIPAL",
       link: "/unversitypage2",
     },
     {
       id: 3,
-      imageUrl: "https://dpu.edu.in/img/compression/medical-clg.jpg",
+      imageUrl: "https://engg.dypvp.edu.in/amiiuac2020/images/institute-of-engineering-and-technology.jpg",
       title: "DPU-DY PATIL PUNE",
       link: "/unversitypage3",
     },
     {
       id: 4,
-      imageUrl: "https://i.ytimg.com/vi/U40sGneJwRQ/maxresdefault.jpg",
+      imageUrl: "https://hitlerrr.wordpress.com/wp-content/uploads/2018/04/lpu_b.jpg",
       title: "LOVELY PROFESSINAL ",
       link: "/unversitypage4",
     },
     {
       id: 5,
       imageUrl:
-        "https://images.shiksha.com/mediadata/images/1573113703phpv24G2q.jpeg",
+        "https://vit.ac.in/sites/all/themes/vittheme/images/about_banner.jpg",
       title: "VIVEKANAND GLOBAL ",
       link: "/unversitypage5",
     },
     {
       id: 6,
       imageUrl:
-        "https://i.ytimg.com/vi/ZrDKa7_WnhE/maxresdefault.jpg",
+        "https://smu.edu.in/content/dam/manipal/smu/images/background-images/aa.jpg",
       title: "SIKKIM MANIPAL ",
       link: "/unversitypage6",
     },
     {
       id: 7,
       imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmiC-22EeJ_Eq1FplBvw5XJB0LDvPBYLPNA&s",
+        "https://shooliniuniversity.com/media/1687521331-Shoolini%20THE%20Asia%20Rankings%202023.png",
       title: "SHOOLINI ",
       link: "/unversitypage7",
     },
     {
       id: 8,
-      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/43/Jain-University-Bangalore.jpg",
+      imageUrl: "https://www.jainuniversity.ac.in/crfm/assets/img/banner2.png",
       title: "JAIN ",
       link: "/unversitypage8",
     },
     {
       id: 9,
-      imageUrl: "https://images.shiksha.com/mediadata/images/1535019884phpjug2fa.jpeg",
+      imageUrl: "https://images.collegedunia.com/public/college_data/images/campusimage/1418297770we_affrim_banner.jpg?mode=stretch",
       title: "LUNDON METROPOLITAN ",
       link: "/unversitypage9",
     },
     {
       id: 10,
       imageUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ1X-Dqq7_EZ7uEo-dnZ4FZjPFgeek8FX4Vw&s",
+        "https://siuk-europe.s3.eu-west-2.amazonaws.com/static/original_images/banner_university_desktop_london_metropolitan_1_hmEyPsQ.webp",
       title: "UTTARANCHAL ",
       link: "/unversitypage10",
     },

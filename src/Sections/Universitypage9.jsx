@@ -17,7 +17,7 @@ const Universitypage9 = () => {
             {/* Blog Post */}
             <div className="w-full mx-40 dm:mx-0 px-4 mb-8">
               <img
-                src="https://images.shiksha.com/mediadata/images/1535019884phpjug2fa.jpeg"
+                src="https://images.collegedunia.com/public/college_data/images/campusimage/1418297770we_affrim_banner.jpg?mode=stretch"
                 alt="Featured Image"
                 className="w-full h-48 md:h-64 object-cover rounded"
               />

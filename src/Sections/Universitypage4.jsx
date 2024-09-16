@@ -15,7 +15,7 @@ const Universitypage4 = () => {
             {/* Blog Post */}
             <div className="w-full mx-40 dm:mx-0 px-4 mb-8">
               <img
-                src="https://i.ytimg.com/vi/U40sGneJwRQ/maxresdefault.jpg"
+                src="https://hitlerrr.wordpress.com/wp-content/uploads/2018/04/lpu_b.jpg"
                 alt="Featured Image"
                 className="w-full h-48 md:h-64 object-cover rounded"
               />

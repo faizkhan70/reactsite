@@ -17,7 +17,7 @@ const Universitypage7 = () => {
             {/* Blog Post */}
             <div className="w-full mx-40 dm:mx-0 px-4 mb-8">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmiC-22EeJ_Eq1FplBvw5XJB0LDvPBYLPNA&s"
+                src="https://shooliniuniversity.com/media/1687521331-Shoolini%20THE%20Asia%20Rankings%202023.png"
                 alt="Featured Image"
                 className="w-full h-48 md:h-64 object-cover rounded"
               />

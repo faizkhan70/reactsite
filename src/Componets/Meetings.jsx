@@ -5,7 +5,7 @@ import React from 'react';
 const Meetings = () => {
   return (
     <>
-  <section className="bg-gray-100 text-gray-800 py-9">
+  <section className="bg-white text-gray-800 py-9">
 	<div className="container p-6 mx-auto space-y-3 text-center lg:p-6 lg:space-y-2">
 		<h2 className="text-4xl font-bold mb-16">We are Working With</h2>
 		<div className="flex flex-wrap dm:gap-14 dm:flex-row justify-center lg:justify-between px-20">
