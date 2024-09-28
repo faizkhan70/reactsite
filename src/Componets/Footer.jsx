@@ -74,6 +74,11 @@ const Footer = () => {
 		</div>
 	</div>
 </footer>
+<div className='bg-gray-200'>
+  <div className="ml-20 dm:ml-3 mt-[1px] py-5">
+    Copyright 2024. Diztoversity Managed by <a href='https://digiminnion.com/' className='font-bold'>Digiminnion.</a>
+  </div>
+</div>
     </div>
   )
 }

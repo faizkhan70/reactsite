@@ -2,7 +2,7 @@ import React from 'react';
 
 const Apply = () => {
   return (
-    <section id='apply' className="bg-[#f9fafbd6] h-auto mt-10 text-black py-10 px-6">
+    <section id='apply' className="bg-white h-auto mt-10 text-black py-10 px-6">
       <h2 className="text-3xl font-sanss md:text-5xl mt-14 font-bold text-center text-gray-700 mb-14">
     Explore Our Online Graduation and Post Graduation Courses
         </h2>
